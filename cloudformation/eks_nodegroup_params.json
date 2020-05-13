@@ -1,0 +1,50 @@
+[
+  {
+    "ParameterKey": "KeyName",
+    "ParameterValue": "eks-nodegroup"
+  }, 
+  {
+    "ParameterKey": "NodeImageId",
+    "ParameterValue": "ami-06b1a20271eb28728"
+  }, 
+  {
+    "ParameterKey": "SpotNode1InstanceType",
+    "ParameterValue": "m4.large"
+  },
+  {
+    "ParameterKey": "SpotNode2InstanceType",
+    "ParameterValue": "t2.medium"
+  },
+  {
+    "ParameterKey": "OnDemandNodeInstanceType",
+    "ParameterValue": "m4.large"
+  }, 
+  {
+    "ParameterKey": "NodeAutoScalingGroupMinSize",
+    "ParameterValue": "1"
+  }, 
+  {
+    "ParameterKey": "NodeAutoScalingGroupMaxSize",
+    "ParameterValue": "3"
+  }, 
+  {
+    "ParameterKey": "NodeVolumeSize",
+    "ParameterValue": "20"
+  }, 
+  {
+    "ParameterKey": "ClusterName",
+    "ParameterValue": "ekscluster"
+  }, 
+  {
+    "ParameterKey": "SpotNode1GroupName",
+    "ParameterValue": "SpotNodeGroup1"
+  }, 
+  {
+    "ParameterKey": "SpotNode2GroupName",
+    "ParameterValue": "SpotNodeGroup2"
+  }, 
+  {
+    "ParameterKey": "OnDemandNodeGroupName",
+    "ParameterValue": "OnDemandNodeGroup"
+  }
+]
