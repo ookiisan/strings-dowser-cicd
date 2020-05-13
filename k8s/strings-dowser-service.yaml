@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: strings-dowser
+spec:
+  type: LoadBalancer
+  selector:
+    app: strings-dowser
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+      nodePort: 30001
+      name: tcp-80
