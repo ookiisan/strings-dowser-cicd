@@ -7,6 +7,10 @@
 APP_ROOT := ./strings-dowser
 
 setup:
+	# Clone source repo
+	git clone https://github.com/ookiisan/strings-dowser.git
+	#Change directory
+	cd ${APP_ROOT}
 	# Create python virtualenv & source it
 	python3 -m venv ~/.strings-dowser
 	source ~/.strings-dowser/bin/activate
