@@ -13,7 +13,7 @@ setup:
 	cd ${APP_ROOT}
 	# Create python virtualenv & source it
 	python3 -m venv ~/.strings-dowser
-	source ~/.strings-dowser/bin/activate
+	. ~/.strings-dowser/bin/activate
 
 install:
 	# This should be run from inside a virtualenv
