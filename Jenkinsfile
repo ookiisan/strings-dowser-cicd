@@ -1,9 +1,14 @@
 pipeline {
   agent any
   stages {
+    stage('Setup source environment') {
+      steps {
+        sh 'make setup'
+      }
+    }
     stage('Install dependencies') {
       steps {
-        sh 'make lint'
+        sh 'make install'
       }
     }
     stage('Linting Dockerfile and Python sources') {
