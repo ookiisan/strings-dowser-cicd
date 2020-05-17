@@ -1,5 +1,5 @@
 ## The Makefile includes instructions on environment setup and lint tests
-# Create and activate a virtual environment
+# Create and activate a virtual environment before each python command
 # Install dependencies in requirements.txt
 # Dockerfile should pass hadolint
 # *.py should pass pylint
@@ -9,22 +9,18 @@ APP_ROOT := ./strings-dowser
 setup:
 	# Clone source repo
 	git clone https://github.com/ookiisan/strings-dowser.git
-	#Change directory
-	cd ${APP_ROOT}
-	# Create python virtualenv & source it
+	# Create python virtualenv
 	python3 -m venv ~/.strings-dowser
-	. ~/.strings-dowser/bin/activate
 
 install:
-	# This should be run from inside a virtualenv
+	. ~/.strings-dowser/bin/activate
 	pip install --upgrade pip && pip install -r ${APP_ROOT}/requirements.txt
 
 lint:
-	# See local hadolint install instructions: https://github.com/hadolint/hadolint
 	# This is linter for Dockerfiles
 	hadolint Dockerfile
 	# This is a linter for Python source code linter: https://www.pylint.org/
-	# This should be run from inside a virtualenv
+	. ~/.strings-dowser/bin/activate
 	pylint --disable=R,C,W1203 ${APP_ROOT}/*.py
 
 build:
