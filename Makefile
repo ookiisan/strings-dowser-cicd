@@ -14,7 +14,7 @@ setup:
 
 install:
 	. ~/.strings-dowser/bin/activate
-	pip install --upgrade pip && pip install -r ${APP_ROOT}/requirements.txt
+	pip3 install --upgrade pip && pip install -r ${APP_ROOT}/requirements.txt
 
 lint:
 	# This is linter for Dockerfiles
