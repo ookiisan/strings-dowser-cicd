@@ -23,8 +23,8 @@ pipeline {
     }
     stage('Login to Docker Hub') {
       steps {
-        withCredentials([string(credentialsId: 'docker-pwd', variable: 'dockerhubpwd')]) {
-          sh 'docker login -u ookiisan -p ${dockerhubpwd}'
+        withCredentials([usernamePassword(credentialsId: 'dockerhub', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')])
+          sh 'docker login -u ${USERNAME} -p ${PASSWORD}'
         }
       }
     }
