@@ -23,7 +23,7 @@ spec:
       containers:
         - name: strings-dowser
           imagePullPolicy: Always
-          image: ookiisan/strings-dowser:1.0.0
+          image: ookiisan/strings-dowser:0.0.3
           resources:
             requests:
               cpu: "50m"
