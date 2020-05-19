@@ -16,7 +16,7 @@ install:
 
 lint:
 	# This is linter for Dockerfiles
-	hadolint Dockerfile
+	hadolint ${APP_ROOT}/Dockerfile
 	# This is a linter for Python source code linter: https://www.pylint.org/
 	. ~/.strings-dowser/bin/activate
 	pylint --disable=R,C,W1203 ${APP_ROOT}/*.py
