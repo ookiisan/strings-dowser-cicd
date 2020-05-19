@@ -4,6 +4,7 @@ metadata:
   name: strings-dowser-deployment
   labels:
     app: strings-dowser
+    app.kubernetes.io/version: "0.0.2"
 spec:
   replicas: 2
   selector:
