@@ -7,10 +7,11 @@ WORKDIR /strings-dowser
 
 ## Step 2:
 # Copy source code to working directory
-COPY ./strings-dowser/*.py /strings-dowser/
-COPY ./strings-dowser/requirements.txt /strings-dowser/
-COPY ./strings-dowser/test /strings-dowser/test
-COPY ./strings-dowser/templates /strings-dowser/templates
+COPY ./*.py /strings-dowser/
+COPY ./requirements.txt /strings-dowser/
+COPY ./version.txt /strings-dowser/
+COPY ./test /strings-dowser/test
+COPY ./templates /strings-dowser/templates
 RUN ls -la .
 
 ## Step 3:
