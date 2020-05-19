@@ -7,10 +7,6 @@
 APP_ROOT := ./strings-dowser
 
 setup:
-	# Removes optional existent repo directory
-	rm -rf ${APP_ROOT}
-	# Clones source repo
-	git clone https://github.com/ookiisan/strings-dowser.git
 	# Creates python virtualenv
 	python3 -m venv ~/.strings-dowser
 
