@@ -12,4 +12,4 @@ docker image ls
 
 # Step 3: 
 # Run flask app
-docker run --name strings-dowser -d -p 80:30001 strings-dowser:1.0.0
+docker run --name strings-dowser -d -p 80:30001 strings-dowser:$APP_VERSION

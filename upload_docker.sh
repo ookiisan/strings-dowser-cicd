@@ -4,16 +4,16 @@
 # Assumes that an image is built via `build_docker.sh`
 
 # Step 1:
-# Create dockerpath
-export imagename=strings-dowser
-export dockerpath=ookiisan/$imagename
-export version=0.0.3
+# Creates dockerpath
+export IMAGE_NAME=strings-dowser
+export DOCKER_PATH=ookiisan/$IMAGE_NAME
+export APP_VERSION=$(<./strings-dowser/version.txt)
 
 # Step 2:  
-# Authenticate & tag
+# Authenticates & tags
 docker login
-docker tag $imagename:$version $dockerpath:$version
+docker tag $IMAGE_NAME:$APP_VERSION $DOCKER_PATH:$APP_VERSION
 
 # Step 3:
-# Push image to a docker repository
-docker push $dockerpath:$version
+# Pushes image to a docker repository
+docker push $DOCKER_PATH:$APP_VERSION

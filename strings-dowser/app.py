@@ -6,7 +6,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def ready():
-    return "Flask server is ready! And current version is 0.0.3"
+    app_version = 'N/A'
+    with open('version.txt') as reader:
+        app_version = reader.read()
+    return "Flask server is ready! And current version is " + app_version
 
 @app.route('/divine')
 def divine():
