@@ -7,7 +7,7 @@
 # Create dockerpath
 export imagename=strings-dowser
 export dockerpath=ookiisan/$imagename
-export version=1.0.0
+export version=0.0.2
 
 # Step 2:  
 # Authenticate & tag
