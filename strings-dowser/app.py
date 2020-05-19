@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def ready():
-    return "Flask server is ready! And current version is 0.0.1"
+    return "Flask server is ready! And current version is 0.0.2"
 
 @app.route('/divine')
 def divine():
