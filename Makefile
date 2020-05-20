@@ -23,14 +23,14 @@ lint:
 
 build:
 	# Runs build script
-	sh ./build_docker.sh
+	./build_docker.sh
 
 upload:
 	# Runs upload script
-	sh ./upload_docker.sh
+	./upload_docker.sh
 
 deploy:
 	# Runs deploy script
-	cd ./k8s && sh ./k8s-apply-configmap.sh && sh ./k8s-apply-all.sh
+	cd ./k8s && ./k8s-apply-configmap.sh && ./k8s-apply-all.sh
 
 all: install lint build upload deploy
