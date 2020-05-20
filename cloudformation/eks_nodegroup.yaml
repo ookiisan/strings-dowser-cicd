@@ -20,7 +20,7 @@ Parameters:
   SpotNode1InstanceType:
     Description: EC2 instance type for the spot instances.
     Type: String
-    Default: t2.small
+    Default: m4.large
     AllowedValues:
     - t2.small
     - t2.medium
@@ -81,7 +81,7 @@ Parameters:
   SpotNode2InstanceType:
     Description: EC2 instance type for the spot instances.
     Type: String
-    Default: t2.small
+    Default: t2.medium
     AllowedValues:
     - t2.small
     - t2.medium
@@ -142,7 +142,7 @@ Parameters:
   OnDemandNodeInstanceType:
     Description: EC2 instance type for the node instances.
     Type: String
-    Default: t2.small
+    Default: m4.large
     AllowedValues:
     - t2.small
     - t2.medium
