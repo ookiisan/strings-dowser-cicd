@@ -5,4 +5,4 @@ export APP_VERSION=$(<./strings-dowser/version.txt)
 
 # Build image and add a descriptive tag
 cd ./strings-dowser
-docker build --tag=strings-dowser:${APP_VERSION} .
+docker build --tag=strings-dowser:"${APP_VERSION}" .
