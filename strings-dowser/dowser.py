@@ -6,7 +6,7 @@ import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
 
-class StringsDowser:
+class StringsDowser
     """Strings dowser app logic"""
 
     def __init__(self):
