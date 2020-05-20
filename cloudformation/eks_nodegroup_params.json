@@ -9,15 +9,15 @@
   }, 
   {
     "ParameterKey": "SpotNode1InstanceType",
-    "ParameterValue": "m4.large"
+    "ParameterValue": "t2.small"
   },
   {
     "ParameterKey": "SpotNode2InstanceType",
-    "ParameterValue": "t2.medium"
+    "ParameterValue": "t2.small"
   },
   {
     "ParameterKey": "OnDemandNodeInstanceType",
-    "ParameterValue": "m4.large"
+    "ParameterValue": "t2.small"
   }, 
   {
     "ParameterKey": "NodeAutoScalingGroupMinSize",
