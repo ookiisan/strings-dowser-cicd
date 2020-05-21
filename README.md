@@ -19,8 +19,8 @@ Build output is a [Docker](https://www.docker.com) image that is deployed on a [
 Application is hosted by [AWS](https://aws.amazon.com) and [Kubernetes](https://kubernetes.io) cluster lives into [Amazon Elastic Kubernetes Service (Amazon EKS)](https://aws.amazon.com/eks). Cloud Infrastructure is fully defined and provisioned (IaC) through [Cloudformation](https://aws.amazon.com/eks) templates. Infrastructure and K8s cluster provisioning is prerequisite for pipeline execution. 
 ### 4. Build pipeline
 Before every pipeline execution start, this GitHub repository is checked in order to pull most recent version of the project. CI/CD [Jenkins](https://www.jenkins.io) pipeline is composed of 7 stages:
-1. __Setup__: Python virtual environment is created in order to isolate dependencies and application execution
-1. __Dependencies installation__: Python requirements is installed in virtual environment
+1. __Setup__: Python virtual environment is created in order to isolate dependencies and application execution.
+1. __Dependencies installation__: Python requirements is installed in virtual environment.
 1. __Linting__: [Dockerfile](https://docs.docker.com/engine/reference/builder) is linted with [Hadolint](https://github.com/hadolint/hadolint). Python sources linting is performed with [Pylint](https://www.pylint.org).
 1. __Docker build__: [Docker](https://www.docker.com) image is built and tagged with a specific version.
 1. __Registry login__: Built [Docker](https://www.docker.com) image will be pushed to [Docker Hub](https://hub.docker.com) public registry. This step perform login to Docker Hub.
